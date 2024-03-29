@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Note App</title>
+	<link rel="stylesheet" type="text/css" href="note.css">
+	<link rel="icon" type="logo" href="">
+
+</head>
+
+<body>
+	<div class="nav">
+		<h1>Notes App</h1>
+	</div>
+	<div class="container">
+		<div class="book-container">
+			<h2>Student</h2>
+			<h5>Arun Raj </h5>
+			<p>Hi everyone I'm Arun Raj I am an frontend developer.This is my javascript Project</p>
+			<button onclick="deletebook(event)">Delete</button>
+		</div>
+	</div>
+	<div class="popup-overlay"></div>
+	<div class="popup-box">
+		<h2>Add Book</h2>
+		<form>
+			<label>Title</label>
+			<input type="text" placeholder="Enter title" id="book-title-input">
+			<label>Subject</label>
+			<input type="text" placeholder="Enter subject" id="book-author-input">
+			<label>Summary</label>
+			<textarea placeholder="Short Description" id="book-description-input"></textarea>
+			<button id="add-book"> Add </button>
+			<button id="cancel-popup">Cancel</button>
+		</form>
+	</div>
+
+	<button class="add-button" id="add-popup-button">+</button>
+
+	<script type="text/javascript" src="note.js"></script>
+</body>
+
+</html>
